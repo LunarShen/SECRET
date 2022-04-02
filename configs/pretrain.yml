@@ -1,0 +1,30 @@
+DATASETS:
+  SOURCE: "dukemtmc"
+  TARGET: "market1501"
+  DIR: "data"
+
+OUTPUT_DIR: "log/duke2market/pretrain"
+
+GPU_Device: [0,1,2,3]
+
+MODE: "pretrain"
+
+INPUT:
+  REA:
+    ENABLED: False
+
+MODEL:
+  PART_DETACH: True
+
+DATALOADER:
+  BATCH_SIZE: 64
+  ITERS: 100
+
+CHECKPOING:
+  REMAIN_CLASSIFIER: True
+  SAVE_STEP: [80]
+
+OPTIM:
+  SCHED: "warmupmultisteplr"
+  STEPS: [40,70]
+  EPOCHS: 80

@@ -1,0 +1,31 @@
+DATASETS:
+  SOURCE: "dukemtmc"
+  TARGET: "market1501"
+  DIR: "data"
+
+OUTPUT_DIR: "log/duke2market/mutualrefine"
+
+GPU_Device: [0,1,2,3]
+
+MODE: "mutualrefine"
+
+CLUSTER:
+  REFINE_K: 0.4
+
+INPUT:
+  REA:
+    ENABLED: True
+
+DATALOADER:
+  BATCH_SIZE: 64
+  ITERS: 400
+
+CHECKPOING:
+  REMAIN_CLASSIFIER: False
+  SAVE_STEP: [-1]
+  PRETRAIN_PATH: "log/duke2market/pretrain/checkpoint_new.pth.tar"
+
+OPTIM:
+  SCHED: "single_step"
+  STEPS: [50]
+  EPOCHS: 50
