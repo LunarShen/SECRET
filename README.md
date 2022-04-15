@@ -1,7 +1,7 @@
 # [AAAI2022] SECRET
 The official repository for SECRET: Self-Consistent Pseudo Label Refinement for Unsupervised Domain Adaptive Person Re-Identification.
 
-[[Video](https://recorder-v3.slideslive.com/?share=60337&s=2dd1e813-4f72-42ca-b4c0-b9fbcc8a8391)] [[Poster](figs/poster.png)]
+<!-- [[Video](https://recorder-v3.slideslive.com/?share=60337&s=2dd1e813-4f72-42ca-b4c0-b9fbcc8a8391)] [[Poster](figs/poster.png)] -->
 
 ![framework](figs/framework.png)
 
@@ -80,5 +80,10 @@ Codebase from [MMT](https://github.com/yxgeee/MMT), [fast-reid](https://github.c
 ## Citation
 If you find this project useful for your research, please cite our paper.
 ```bibtex
-Coming soon
+@inproceedings{he2022secret,
+  title={SECRET: Self-Consistent Pseudo Label Refinement for Unsupervised Domain Adaptive Person Re-Identification},
+  author={He, Tao and Shen, Leqi and Guo, Zhenhua and Guo, Yuchen and Ding, Guiguang},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2022}
+}
 ```
