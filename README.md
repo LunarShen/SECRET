@@ -81,9 +81,12 @@ Codebase from [MMT](https://github.com/yxgeee/MMT), [fast-reid](https://github.c
 If you find this project useful for your research, please cite our paper.
 ```bibtex
 @inproceedings{he2022secret,
-  title={SECRET: Self-Consistent Pseudo Label Refinement for Unsupervised Domain Adaptive Person Re-Identification},
-  author={He, Tao and Shen, Leqi and Guo, Zhenhua and Guo, Yuchen and Ding, Guiguang},
+  title={SECRET: Self-Consistent Pseudo Label Refinement for Unsupervised Domain Adaptive Person Re-identification},
+  author={He, Tao and Shen, Leqi and Guo, Yuchen and Ding, Guiguang and Guo, Zhenhua},
   booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={36},
+  number={1},
+  pages={879--887},
   year={2022}
 }
 ```
